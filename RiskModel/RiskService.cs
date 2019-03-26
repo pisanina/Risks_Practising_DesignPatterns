@@ -4,11 +4,11 @@ namespace RiskModel
 {
     public class RiskService
     {
-        private readonly Resource _matt = new Resource { Id = 1, Name = "Matt Sharpe" };
-        private readonly Resource _john = new Resource { Id = 2, Name = "John Hillhouse" };
-        private readonly Resource _julian = new Resource { Id = 3, Name = "Julian Jelfs" };
-        private readonly Resource _darren = new Resource { Id = 4, Name = "Darren Thorpe" };
-        private readonly Resource _jonm = new Resource { Id = 5, Name = "Jon Moore" };
+        private readonly Resource _matt = new Resource { Id = 1, Name = "Person 1" };
+        private readonly Resource _john = new Resource { Id = 2, Name = "Person 2" };
+        private readonly Resource _julian = new Resource { Id = 3, Name = "Person 3" };
+        private readonly Resource _darren = new Resource { Id = 4, Name = "Person 4" };
+        private readonly Resource _jonm = new Resource { Id = 5, Name = "Person 5" };
 
         public List<Risk> GetRisks()
         {

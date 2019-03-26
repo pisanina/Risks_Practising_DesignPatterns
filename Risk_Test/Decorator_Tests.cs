@@ -29,7 +29,7 @@ namespace Risk_Test
         [Test]
         public void CheckDecorator_WitoutStatus()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             string title = "fire";
             
             IDecoratorSolution riskList = new DecoratorSolutionBase();
@@ -51,7 +51,7 @@ namespace Risk_Test
         [Test]
         public void CheckDecorator_WithoutTitle()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             RiskStatus notStatus = RiskStatus.Open;
 
             IDecoratorSolution riskList = new DecoratorSolutionBase();
@@ -89,7 +89,7 @@ namespace Risk_Test
         {
             RiskStatus notStatus = RiskStatus.Open;
             string title = "fire";
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
 
             IDecoratorSolution riskList = new DecoratorSolutionBase();
             riskList = new ByOwnerNameDecorator(riskList, ownerName);
@@ -140,7 +140,7 @@ namespace Risk_Test
         [Test]
         public void CheckDecorator_UserName_KeySensitive()
         {
-            string ownerName = "Jon moore";
+            string ownerName = "Person 5";
 
             IDecoratorSolution riskList = new DecoratorSolutionBase();
             riskList = new ByOwnerNameDecorator(riskList, ownerName);

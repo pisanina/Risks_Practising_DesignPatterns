@@ -74,7 +74,7 @@ namespace Risk_Test
         [Test]
         public void CheckCommand_UserName_KeySensitive()
         {
-            string ownerName = "Jon moore";
+            string ownerName = "Person 5";
 
             ICommand byOwnerName = new ByOnwerNameCommand(ownerName);
 
@@ -110,7 +110,7 @@ namespace Risk_Test
         [Test]
         public void CheckCommand_WitoutStatus()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             string title = "fire";
 
             ICommand byOwnerName = new ByOnwerNameCommand(ownerName);
@@ -134,7 +134,7 @@ namespace Risk_Test
         [Test]
         public void CheckCommand_WithoutTitle()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             RiskStatus notStatus = RiskStatus.Open;
 
             ICommand byOwnerName = new ByOnwerNameCommand(ownerName);
@@ -176,7 +176,7 @@ namespace Risk_Test
         {
             RiskStatus notStatus = RiskStatus.Open;
             string title = "fire";
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
 
             ICommand byOwnerName = new ByOnwerNameCommand(ownerName);
             ICommand byDiffrentStatus = new ByDiffrentStatusCommand(notStatus);

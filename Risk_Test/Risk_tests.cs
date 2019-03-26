@@ -23,23 +23,23 @@ namespace Risk_Test
             [Test]
             public void CheckSearchByOwnerName()
             {
-                string ownerName = "Jon Moore";
+                string ownerName = "Person 5";
                 var result = search.GetListOfRisksWithOwnerName(ownerName);
                 Assert.True(result.Count == 3);
-                Assert.True(result[0].Owner.Name == "Jon Moore");
-                Assert.True(result[1].Owner.Name == "Jon Moore");
-                Assert.True(result[2].Owner.Name == "Jon Moore");
+                Assert.True(result[0].Owner.Name == "Person 5");
+                Assert.True(result[1].Owner.Name == "Person 5");
+                Assert.True(result[2].Owner.Name == "Person 5");
             }
 
             [Test]
             public void CheckSearchByOwnerName_NoCaseSensitive()
             {
-                string ownerName = "jon moore";
+                string ownerName = "Person 5";
                 var result = search.GetListOfRisksWithOwnerName(ownerName);
                 Assert.True(result.Count == 3);
-                Assert.True(result[0].Owner.Name == "Jon Moore");
-                Assert.True(result[1].Owner.Name == "Jon Moore");
-                Assert.True(result[2].Owner.Name == "Jon Moore");
+                Assert.True(result[0].Owner.Name == "Person 5");
+                Assert.True(result[1].Owner.Name == "Person 5");
+                Assert.True(result[2].Owner.Name == "Person 5");
             }
 
             [Test]

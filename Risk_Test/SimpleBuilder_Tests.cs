@@ -39,7 +39,7 @@ namespace Risk_Test
         [Test]
         public void CheckSimpleBuilder_WitoutStatus()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             string title = "fire";
 
             var builder = new Search_SimpleBuilder(listOfRisks);
@@ -60,7 +60,7 @@ namespace Risk_Test
         [Test]
         public void CheckSimpleBuilder_WithoutTitle()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             RiskStatus status = RiskStatus.Open;
 
             var builder = new Search_SimpleBuilder(listOfRisks);
@@ -95,7 +95,7 @@ namespace Risk_Test
         {
             RiskStatus notStatus = RiskStatus.Open;
             string title = "fire";
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
 
             var builder = new Search_SimpleBuilder(listOfRisks);
             builder.GetListOfRisksWithOwnerName(ownerName);
@@ -157,7 +157,7 @@ namespace Risk_Test
         [Test]
         public void CheckSimpleBuilder_UserName_KeySensitive()
         {
-            string ownerName = "Jon moore";
+            string ownerName = "Person 5";
 
             var builder = new Search_SimpleBuilder(listOfRisks);
             builder.GetListOfRisksWithOwnerName(ownerName);

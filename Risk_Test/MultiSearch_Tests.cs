@@ -35,7 +35,7 @@ namespace Risk_Test
         [Test]
         public void CheckMultiSearch_AllArguments()
         {
-            string ownerName = "Matt Sharpe"; ;
+            string ownerName = "Person 1"; ;
             RiskStatus status = RiskStatus.Open;
             string title = null;
 
@@ -56,7 +56,7 @@ namespace Risk_Test
         [Test]
         public void CheckMultiSearch_WitoutStatus()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             string title = "fire";
 
             var result = mSearch.GetListOfRisksByOwnerStatusTitle(ownerName, null, title);
@@ -74,7 +74,7 @@ namespace Risk_Test
         [Test]
         public void CheckMultiSearch_WithoutTitle()
         {
-            string ownerName = "Jon Moore";
+            string ownerName = "Person 5";
             RiskStatus notStatus = RiskStatus.Open;
 
             var result = mSearch.GetListOfRisksByOwnerStatusTitle(ownerName, notStatus);
@@ -123,7 +123,7 @@ namespace Risk_Test
         [Test]
         public void CheckMultiSearch_UserName_KeySensitive()
         {
-            string ownerName = "Jon moore";
+            string ownerName = "Person 5";
 
 
             var result = mSearch.GetListOfRisksByOwnerStatusTitle(ownerName);
